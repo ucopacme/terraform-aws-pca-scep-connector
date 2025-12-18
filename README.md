@@ -25,8 +25,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_certificate_authority_arn"></a> [certificate\_authority\_arn](#input\_certificate\_authority\_arn) | ARN of the ACM Private CA | `string` | n/a | yes |
 | <a name="input_connector_type"></a> [connector\_type](#input\_connector\_type) | MICROSOFT\_INTUNE or GENERAL | `string` | n/a | yes |
-| <a name="input_intune"></a> [intune](#input\_intune) | n/a | <pre>object({<br/>    azure_application_id = string<br/>    tenant_id            = optional(string)<br/>    domain               = optional(string)<br/>  })</pre> | `null` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(string)` | `{}` | no |
+| <a name="input_intune"></a> [intune](#input\_intune) | MICROSOFT\_INTUNE Domain or Tenant\_id | <pre>object({<br/>    azure_application_id = string<br/>    tenant_id            = optional(string)<br/>    domain               = optional(string)<br/>  })</pre> | `null` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Required Tags | `map(string)` | `{}` | no |
 
 ## Outputs
 
