@@ -20,11 +20,11 @@ variable "intune" {
     domain               = optional(string)
   })
   default = null
-  description = "MICROSOFT_INTUNE Domain or Tenant_id"
+  description = "MICROSOFT_INTUNE DOMAIN OR TENANT_ID"
 }
 
 variable "tags" {
   type    = map(string)
   default = {}
-  description = "Required Tags"
+  description = "REQUIRED TAGS"
 }
